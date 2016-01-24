@@ -1,0 +1,126 @@
+body{
+    background-image:url('../images/bg.jpg');
+    font-family:'Roboto Mono'
+}
+
+.clickable{
+	cursor:pointer;
+}
+
+.view{
+    display:none;
+}
+
+.shown.view{
+    display:block;
+}
+
+.user-score,.user-place{
+    color:green;
+}
+
+#game-over.view .gamebox-header, #game-start.view .gamebox-header {
+    text-align:center;
+}
+
+#game-over ol{
+    display: inline-block;
+    margin:auto;
+}
+
+.hidden{
+   visibility:hidden;
+}
+
+.shadowed{
+ -webkit-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+		 box-shadow:         3px 3px 23px 0px rgba(50, 50, 50, 0.75);	
+}
+
+.gamebox{
+    width:1000px;
+	display: inline-block;
+    border-radius: 8px;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    position: absolute;
+    background-color:#FFFAAA;
+}
+
+.gamebox-header{
+    font-size: 40px;
+    line-height: 1.6em;
+    font-family: 'Sigmar One';
+}
+
+.guess-holder{
+    margin-bottom:100px;
+    padding:10px;
+ background-image:url('../images/wood.jpg');
+}
+
+.letter.placeholder{
+    background-color:#330066;
+    -webkit-box-shadow: inset 10px 10px 23px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 23px -2px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 23px -2px rgba(0,0,0,0.75);
+
+}
+
+.letter{
+    height:70px;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Sigmar One';
+    background-color: #663300;
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+    margin: 3px;
+    width: 70px;
+    text-align: center;
+}
+
+.hearts-holder{
+    float:right;
+}
+
+img.heart{
+    width:30px;
+}
+
+
+.main-title{
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Sigmar One';
+}
+
+.main-title h1{
+    margin:0px;
+    line-height: 0.7em;
+    margin-bottom:40px;
+}
+
+
+.copyright{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 5px;
+}
+
+.start-btn{
+    background-color:#00CC00;
+    padding:20px 50px;
+    display:inline-block;
+    margin:auto;
+    border-radius:5px;
+}
+
+.start-btn:hover{
+    background-color:#0033CC;
+}

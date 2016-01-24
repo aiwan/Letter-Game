@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>Letters</title>
+		<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+		<script src="./js/lib/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="./js/lib/jquery-ui.min.css">
+		<link rel="stylesheet" href="./css/letters.css">
+
+		<script>
+		$(document).ready(function(){
+			$(".letter").not(".placeholder").draggable();
+		});
+		</script>
+	</head>
+	<body>
+		<div class="gamebox shadowed">
+			<div id="game-start" class="view shown">
+				<div class="main-title"><h1>Welcome To Letters</h1></div>
+				<div class="gamebox-header">
+					<div class="start-btn shadowed clickable">Click to Start</div>
+				</div>
+			</div>
+			<div id="game" class="view">
+				<div class="main-title"><h1>Letters</h1></div>
+				<div class="gamebox-header">
+					Score <span class="user-score"></span>
+					<div class="hearts-holder"></div>
+				</div>
+				<div class="guess-holder"></div>
+				<div class="letters"></div>
+			</div>
+			<div id="game-over" class="view">
+				<div class="main-title"><h1>Game Over</h1></div>
+				<div class="gamebox-header">
+					Your score is <span class="user-score">200</span><br>
+					Highscores:<br>
+					<ol>
+					</ol>
+					<br>
+					<div class="start-btn shadowed clickable">Start A New Game</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">Copyright © 2014-2016 Israel Tech Challenge, All Rights Reserved.</div>
+	</body>
+
+<!--Scripts-->
+<script type="text/javascript" src="./js/letters.js"></script>
+
+</html>
